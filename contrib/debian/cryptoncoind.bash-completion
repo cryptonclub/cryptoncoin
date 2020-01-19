@@ -1,0 +1,2 @@
+contrib/cryptoncoind.bash-completion	cryptoncoind
+contrib/cryptoncoin-cli.bash-completion    cryptoncoin-cli

@@ -1,0 +1,70 @@
+Source: cryptoncoin
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@cryptoncoin.org>
+Uploaders: Holger Schinzel <holger@cryptoncoin.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.47),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.47),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.47),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.47),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.47),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.47),
+ libminiupnpc8-dev | libminiupnpc-dev,
+ qt4-qmake, libqt4-dev,
+ qttools5-dev-tools, qttools5-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python,
+ libzmq3-dev
+Standards-Version: 3.9.2
+Homepage: https://www.cryptoncoin.org/
+Vcs-Git: git://github.com/cryptoncoinpay/cryptoncoin.git
+Vcs-Browser: https://github.com/cryptoncoinpay/cryptoncoin
+
+Package: cryptoncoind
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Cryptoncoin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Cryptoncoin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Cryptoncoin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, cryptoncoind, and the CLI tool
+ cryptoncoin-cli to interact with the daemon.
+
+Package: cryptoncoin-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Cryptoncoin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Cryptoncoin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Cryptoncoin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides Cryptoncoin-Qt, a GUI for Cryptoncoin based on Qt.
+
+Package: cryptoncoin-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ Cryptoncoin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Cryptoncoin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Cryptoncoin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides cryptoncoin-tx, a command-line transaction creation
+ tool which can be used without a cryptoncoin daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

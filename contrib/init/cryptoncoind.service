@@ -1,0 +1,22 @@
+[Unit]
+Description=Cryptoncoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=cryptoncoincore
+Group=cryptoncoincore
+
+Type=forking
+PIDFile=/var/lib/cryptoncoind/cryptoncoind.pid
+ExecStart=/usr/bin/cryptoncoind -daemon -pid=/var/lib/cryptoncoind/cryptoncoind.pid \
+-conf=/etc/cryptoncoincore/cryptoncoin.conf -datadir=/var/lib/cryptoncoind -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,25 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ar">locale/cryptoncoin_ar.qm</file>
+        <file alias="bg">locale/cryptoncoin_bg.qm</file>
+        <file alias="de">locale/cryptoncoin_de.qm</file>
+        <file alias="en">locale/cryptoncoin_en.qm</file>
+        <file alias="es">locale/cryptoncoin_es.qm</file>
+        <file alias="fi">locale/cryptoncoin_fi.qm</file>
+        <file alias="fr">locale/cryptoncoin_fr.qm</file>
+        <file alias="it">locale/cryptoncoin_it.qm</file>
+        <file alias="ja">locale/cryptoncoin_ja.qm</file>
+        <file alias="ko">locale/cryptoncoin_ko.qm</file>
+        <file alias="nl">locale/cryptoncoin_nl.qm</file>
+        <file alias="pl">locale/cryptoncoin_pl.qm</file>
+        <file alias="pt">locale/cryptoncoin_pt.qm</file>
+        <file alias="ru">locale/cryptoncoin_ru.qm</file>
+        <file alias="sk">locale/cryptoncoin_sk.qm</file>
+        <file alias="sv">locale/cryptoncoin_sv.qm</file>
+        <file alias="th">locale/cryptoncoin_th.qm</file>
+        <file alias="tr">locale/cryptoncoin_tr.qm</file>
+        <file alias="vi">locale/cryptoncoin_vi.qm</file>
+        <file alias="zh_CN">locale/cryptoncoin_zh_CN.qm</file>
+        <file alias="zh_TW">locale/cryptoncoin_zh_TW.qm</file>
+    </qresource>
+</RCC>

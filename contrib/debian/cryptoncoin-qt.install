@@ -1,0 +1,6 @@
+usr/local/bin/cryptoncoin-qt usr/bin
+share/pixmaps/cryptoncoin32.xpm usr/share/pixmaps
+share/pixmaps/cryptoncoin16.xpm usr/share/pixmaps
+share/pixmaps/cryptoncoin128.png usr/share/pixmaps
+debian/cryptoncoin-qt.desktop usr/share/applications
+debian/cryptoncoin-qt.protocol usr/share/kde4/services/
